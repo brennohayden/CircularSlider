@@ -48,10 +48,10 @@ open class CircularSlider: UIView {
     fileprivate var backingFractionDigits: NSInteger = 2
     fileprivate let maxFractionDigits: NSInteger = 4
     fileprivate var startAngle: CGFloat {
-        return -CGFloat(Double.pi / 2) + radiansOffset
+        return CGFloat(Double.pi / 2) + radiansOffset
     }
     fileprivate var endAngle: CGFloat {
-        return 3 * CGFloat(Double.pi / 2) - radiansOffset
+        return 5 * CGFloat(Double.pi / 2) - radiansOffset
     }
     fileprivate var angleRange: CGFloat {
         return endAngle - startAngle
